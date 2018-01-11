@@ -12,6 +12,14 @@ function addTask() {
     });
 }
 
+function removeTask() {
+    var $container = $('.task ul');
+        $container.on('click', 'li', function() {
+            $(this).remove();
+        });
+
+}
+
 
 function imgSwapper() {
     $('select').on('change', function() {
@@ -21,3 +29,8 @@ function imgSwapper() {
     })
 }
 
+$(document).ready(function{
+ addTask();
+ removeTask();
+ imgSwapper(); 
+});
