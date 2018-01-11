@@ -1,0 +1,32 @@
+body {
+    background-color: grey;
+    color: blue;
+}
+
+.container {
+    width: 100%;
+    display: inline-block;
+    border: 4px;
+    margin: 25px;
+    padding: 20%;
+    border-style: groove;
+    border-color: black;
+}
+
+li {
+    display: list-item;
+    padding: 3px;
+    border-style: groove;
+    border: 2px;
+    border-color: blue;
+}
+
+.img-container {
+    float: right;
+}
+
+group:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

@@ -3,7 +3,7 @@
 function addTask() {
     var $btn = $('.add');
     var $input = $('section input');
-    var $list = $('.task ul');
+    var $list = $('.tasks ul');
 
     $btn.on('click', function() {
         var val = $input.val();
@@ -13,7 +13,8 @@ function addTask() {
 }
 
 function removeTask() {
-    var $container = $('.task ul');
+    var $container = $('.tasks ul');
+
         $container.on('click', 'li', function() {
             $(this).remove();
         });
@@ -23,13 +24,12 @@ function removeTask() {
 
 function imgSwapper() {
     $('select').on('change', function() {
-        var $imgSrc = $(this.val();
+        var $imgSrc = $(this).val();
         $('.main-img').attr('src', $imgSrc);
-    )
     })
 }
 
-$(document).ready(function{
+$(document).ready(function() {
  addTask();
  removeTask();
  imgSwapper(); 
