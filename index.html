@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Todo and Image Swapper app!</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+        <section class="container">
+            <h2>ToDo App</h2>
+            <section>
+                <input type="text" placeholder="enter task">
+                <button class"add">Add Task</button>
+            </section>
+
+            <section class="task">
+                <ul></ul>
+            </section>
+        </section>
+        
+        <section class="container">
+            <h2>Image Swapper!</h2>
+            <select>
+                <option value="img/no-selection.png">Select a Color</option>
+                <option value="img/blue.png">blue shirt</option>
+                <option value="img/green.png">green shirt</option>
+                <option value="img/black.png">black shirt</option>
+            </select>
+
+            <div class="img-container">
+                <img class="main-img" src="img/no-selection.png">
+            </div>
+
+        </section>
+        <script src="jquery-3.2.1.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
